@@ -1,0 +1,83 @@
+<html>
+<body>
+    <script>
+        /*alert('funciona')
+        var nome='qualquer um'
+        var número=10
+        if(nome == 'qualquer um'){
+            print ('qualquer um ja foi')
+        }
+        //if(nome != 'jess'){
+            console.log('o que acontece depois')
+         //}
+        if(número == 10 && nome== 'qualquer um'){
+            console.log('verdade')
+        }
+
+        function nomedafuncao(){
+            //executado quando chamar a funcao
+            console.log('chamar a função nomedafuncao')
+        }
+        function teste(){
+            console.log('o nome passado é:'+ nome)
+        }
+
+        teste('jéssica')
+
+        function pegarnome(parametro){
+            if(parametro ==1){
+                return 'jess';
+            }else{
+                return 'outro nome';
+            }
+
+        }
+        var func=function(){
+            alert ('belezura')
+        }
+        
+        var n=0;
+        while(n<10){
+            //execute a funcao aqui
+        }
+
+        var arr=["jess","guilherme","marc"]
+        arr.forEach(function(value,index){
+            console.log(value);
+        }
+        */
+
+        /*var nome=prompt("qual seu nome");
+        var idade=prompt("qual a sua idade");
+        var cidade=prompt("qual a sua cidade");
+
+        console.log("o nome é" + nome);
+        console.log("a idade é"+ idade);
+        console.log("a cidade é"+ cidade);
+        */
+
+        var n1= prompt('informe o primeiro numero...');
+        var sinal=prompt('informe o sinal da sua operacao...');
+        while(sinal!='-' && sinal!='+' && sinal!='/' && sinal!='*'){
+            alert('por favor, informe um sinal valido!')
+             sinal=prompt('informe o sinal...');
+        }
+        var n2=prompt('informe o segundo numero...');
+        n1=parseInt(n1);
+        n2=parseInt(n2);
+        var resultado=0;
+        if(sinal=='+'){
+            resultado=n1 + n2;
+        }else if(sinal=='-'){
+            resultado=n1 - n2;
+        }else if(sinal=='/'){
+            resultado=n1 / n2;
+        }else if(sinal=='*'){
+            resultado=n1 * n2;20
+        }
+
+        alert('o resultado é :'+ resultado)
+
+    </script>
+</body>
+</html>

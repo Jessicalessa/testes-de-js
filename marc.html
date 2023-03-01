@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {background-color: rgb(29, 29, 72); }
+        div#botao { color:rgb(15, 14, 14);
+            background-color: rgb(248, 243, 243);
+            background-position:60px, 40px ;
+            position: center;
+            font-size: 100px;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            font-style: italic;
+        }
+        h1 {
+            color: rgb(230, 235, 239);
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Olá Cah
+    </h1>
+    <div id="botao" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()">
+        Quero a gatinha
+    </div> 
+    <script>
+        function clicar(){
+            var a= window.document.getElementById('botao')
+            a.innerText='por favor'
+        }
+        function entrar(){
+            var a= window.document.getElementById('botao')
+            a.innerText='Clique'
+            a.style.backgroundColor='black'
+            a.style.color='white'
+        }
+        function saiu(){
+            var a= window.document.getElementById('botao')
+            a.innerText='boa tarde'
+            a.style.color='red'
+        }
+
+    </script>
+    
+
+</body>
+</html>

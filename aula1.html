@@ -1,0 +1,80 @@
+<html>
+<body>
+    <script>
+       /* var objetos={
+            'nome':'jessica',
+            'idade':'19',
+            'profissao':'programadora'
+        };
+
+        alert(objetos.nome);*/
+
+       /* function Pessoa(){
+            this.nome='jessica';
+            this.idade='19';
+            this.printnome=function(){
+                alert(this.nome)
+            }
+        }
+
+        function Animal(nome){
+            this.nome=nome;
+            this.peso="12kilos";
+
+            if(nome == undefined){
+                nome= 'cachorro';
+            }
+
+            if(peso == undefined){
+                peso='12 kilos';
+            }
+        }
+
+        animal=new Animal("cachorro");
+
+        animal2= new Animal("gato");
+
+        var pessoa= new Pessoa();
+        var pessoa_2=new Pessoa();
+
+        pessoa_2.nome="joão";
+
+        alert(animal.nome);*/
+
+        function Pessoa(){
+            this.nome="jessica";
+            this.printnome=function(numero){
+                alert(numero);
+            };
+            this.returnAnimal=function(animal){
+                return animal
+            }
+        }
+
+        function Animal(){
+            this.nome='cachorro';
+        }
+
+        var pessoa=new Pessoa();
+        var animal= new Animal();
+
+        alert(pessoa.returnAnimal(animal).nome);
+
+        /*function Pessoa ou objeto(){
+            this.nome="nome do objeto ou pessoa";
+            this.nomedafuncao=function(categoria){
+                return categoria
+            }
+        }
+        function categoria(){
+            this.nome="nome da categoria";
+        }
+
+        var pessoa= new Pessoa();
+        var categoria= new categoria();
+
+        alert(pessoa.nomedafuncao(categoria).oque quer desta categoria);
+        */
+    </script>
+</body>
+</html>
